@@ -26,3 +26,7 @@ console.log(person);
 let course = 'Vai se fuder';
 course = 'Vai voce meu fio';
 //course = 1233;  This will not work as the course is inferenced as a string value.
+
+// UNION TYPES
+let courseUnion: string | number = 'Vai que vai!'
+courseUnion = 123;
