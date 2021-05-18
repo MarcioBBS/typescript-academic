@@ -1,0 +1,23 @@
+{
+  "name": "typescript-academic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcioBBS/typescript-academic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcioBBS/typescript-academic/issues"
+  },
+  "homepage": "https://github.com/MarcioBBS/typescript-academic#readme",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
