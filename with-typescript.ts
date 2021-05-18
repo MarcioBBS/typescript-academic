@@ -8,3 +8,15 @@ console.log(result);
 
 let hobbies: string[] = ['Surf' ,'Snowboard', 'Cooking'];
 console.log(hobbies);
+
+let person: {
+   name: string;
+   age: number;
+}
+
+person = {
+   name: 'Julian',
+   age: 2
+}
+
+console.log(person);
