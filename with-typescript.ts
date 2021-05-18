@@ -9,16 +9,25 @@ console.log(result);
 let hobbies: string[] = ['Surf' ,'Snowboard', 'Cooking'];
 console.log(hobbies);
 
-let person: {
+
+// Assigning TYPE ALIASES
+// Create the Person type aliases
+type Person = {
    name: string;
    age: number;
-}[]
+};
 
-person = [
-   {name: 'Marcio', age: 42},
-   {name: 'Leah', age: 38},
-   {name: 'Julian', age: 2}
-]
+// Set the var person to the type Person
+let person: Person;
+
+person = {
+   name: 'Marcio',
+   age: 42
+};
+
+// Set the var people to the type Person
+let people: Person[];
+
 
 console.log(person);
 
