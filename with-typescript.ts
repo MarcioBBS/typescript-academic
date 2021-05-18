@@ -12,11 +12,12 @@ console.log(hobbies);
 let person: {
    name: string;
    age: number;
-}
+}[]
 
-person = {
-   name: 'Julian',
-   age: 2
-}
+person = [
+   {name: 'Marcio', age: 42},
+   {name: 'Leah', age: 38},
+   {name: 'Julian', age: 2}
+]
 
 console.log(person);
