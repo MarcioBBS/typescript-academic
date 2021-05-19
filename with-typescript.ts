@@ -41,3 +41,22 @@ let courseUnion: string | number = 'Vai que vai!'
 courseUnion = 123;
 courseUnion = 'Mudei novamente'
 console.log(typeof courseUnion); // The [typeof] of Union Types will depend on the last assigned variable.
+
+// Functions
+
+// This is a type [void] function as the function does not return anything.
+function printValues(value1: any, value2: any) {
+   console.log(value1 + value2);
+}
+
+// This is a type [number] function as the function returns a number
+// The type [number] here is IMPLICIT as we are NOT specifying the type of the function
+function printResult(value1: number, value2: number) {
+   return value1 + value2
+}
+
+// This is a type [number] function as the function returns a number
+// The type [number] here is EXPLICIT as we are specifying the type of the function
+function printNumber(value1: number, value2: number): number {
+   return value1 + value2
+}
