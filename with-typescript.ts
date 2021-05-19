@@ -25,7 +25,7 @@ person = {
    age: 42
 };
 
-// Set the var people to the type Person
+// Set the var people to the type Person Array.
 let people: Person[];
 
 
@@ -39,3 +39,5 @@ course = 'Vai voce meu fio';
 // UNION TYPES
 let courseUnion: string | number = 'Vai que vai!'
 courseUnion = 123;
+courseUnion = 'Mudei novamente'
+console.log(typeof courseUnion); // The [typeof] of Union Types will depend on the last assigned variable.

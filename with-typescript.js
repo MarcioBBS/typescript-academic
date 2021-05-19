@@ -11,7 +11,7 @@ person = {
     name: 'Marcio',
     age: 42
 };
-// Set the var people to the type Person
+// Set the var people to the type Person Array.
 var people;
 console.log(person);
 // INFERENCE
@@ -21,3 +21,5 @@ course = 'Vai voce meu fio';
 // UNION TYPES
 var courseUnion = 'Vai que vai!';
 courseUnion = 123;
+courseUnion = 'Mudei novamente';
+console.log(typeof courseUnion);
