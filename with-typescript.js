@@ -86,3 +86,13 @@ var Student = /** @class */ (function () {
 var student = new Student('Marcio', 'Braz', 42, ['Angular']);
 student.enroll('React');
 console.log(student.getCourses());
+var Instructor = /** @class */ (function () {
+    function Instructor(firstName, age) {
+        this.firstName = firstName;
+        this.age = age;
+    }
+    Instructor.prototype.greetings = function () {
+        console.log("You are " + this.firstName + " and you are " + this.age + " years old");
+    };
+    return Instructor;
+}());

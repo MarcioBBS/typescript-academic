@@ -109,3 +109,23 @@ class Student {
 const student = new Student('Marcio', 'Braz', 42, ['Angular']);
 student.enroll('React');
 console.log(student.getCourses());
+
+// *** INTERFACES ***
+// Iterfaces are the "Implementation detail"
+// Interface is an Object Definition. We don't implemente the class itself here, instead we use to create the object structure which will be implemented later on
+interface Human {
+   // Structuring the Attributes
+   firstName: string;
+   age: number;
+
+   // Structuring the Methods
+   greetings: () => void;
+}
+
+class Instructor implements Human {
+   constructor(public firstName: string, public age: number){}
+
+   greetings(){
+      console.log(`You are ${this.firstName} and you are ${this.age} years old`)
+   }
+}
