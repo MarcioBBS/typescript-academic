@@ -73,3 +73,39 @@ console.log(insertAtBegin([2,3,4,5], 1));
 // Test insertAtBegin function with strings
 console.log(insertAtBegin(['b', 'c', 'd', 'e'], 'a'));
 
+
+// *** CLASSES AND TYPESCRIPT ***
+console.log(`
+************* Functions *************
+`);
+class Student {
+   // Defining the variable type
+   // firstName: string;
+   // lastName: string
+   // age: number;
+   // private courses: string[];
+
+   // // Assigning the variable values
+   // constructor(first: string, ) {
+   //    this.firstName = first;
+   //    this.lastName = last;
+   //    this.age = age;
+   //    this.courses = courses;
+   // }
+
+   // Shorthand notation - This is the same as the //commented// code above - In this case we do not need to define the variables and then assign it on the constructor. Instead we can use the short hand notation declaring which variable(s) is(are) public or private and also the type of the variable
+   constructor(public firstNanme: string, public lastName: string, public age: number, private courses: string[]){}
+   
+
+   enroll(courseName: string) {
+      this.courses = [...this.courses, courseName];
+   }
+
+   public getCourses() {
+      return this.courses;
+   }
+}
+
+const student = new Student('Marcio', 'Braz', 42, ['Angular']);
+student.enroll('React');
+console.log(student.getCourses());
